@@ -24,7 +24,7 @@ public class MetaContentController {
     public ResponseEntity<MetaContentResponse> storeMetaData(@RequestBody MetaContentDto metaData) {
         return ResponseEntity.ok(metaContentService.storeMetaTag(metaData));
     }
-
+//testing
     @PostMapping("/breadcrumb")
     public ResponseEntity<BreadCrumbRes> generateBreadcrumb(@RequestBody List<BreadCrumbReq> crumbReq) {
         return ResponseEntity.ok(metaContentService.generateBreadcrumbs(crumbReq));
